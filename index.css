@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mukta', sans-serif;
+    user-select: none; /*this will not allow users to select any text in the app*/
+    background-color: #EEF0F4;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    /* all contents will be within this range */
+    max-width: 375px;
+    margin: 30px auto;
+}
+
+.contents img {
+    height: 45vh;
+    width: auto;
+}
+
+#input-field {
+    background-color: #DCE1EB;
+    /* no need to add pixels if the value is zero */
+    border: 0; 
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    font-family: inherit;
+}
+
+#add-btn {
+    color: #FDFDFD;
+    background-color: #2a9d8f;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: inherit;
+}
+
+#add-btn:hover {
+    background-color: #217a70;
+}
+
+.contents ul {
+    display: flex;
+    flex-direction: row;
+    /* this will make entire content within max width */
+    flex-wrap: wrap;
+    /* this will maintain given gap with all flex members*/
+    gap: 10px 12px;
+    margin: 15px 0px;
+    justify-content: center;
+}
+
+.contents ul li{
+    list-style: none;
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px #00000033;
+    padding: 10px 15px;
+    border-radius: 8px;
+    /* this will make entire contents occupy entire contents till max-width */
+    flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contents ul li:hover {
+    background-color: #fef1ce;
+}
